@@ -11,9 +11,9 @@ function __rim_create_project() {
   echo -e "${red}"
   cd $project_name
     git init
-    bundle init
     mkdir -p "lib" "test"
 
+    echo -n "source 'http://rubygems.org'\n" >> 'Gemfile'
     echo -n "DO SOMETHING\n" >> 'README.md'
     echo -n "/tmp\n/log\n/.bundle\n/db/*.sqlite3" >> '.gitignore'
     echo -n "require 'rake'\nrequire 'rake/testtask'\n\nRake::TestTask.new do |t|\n  t.pattern = 'test/**/*_test.rb'\n  t.libs << 'test'\nend\n" >> 'Rakefile'
