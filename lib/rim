@@ -1,8 +1,8 @@
 #!/bin/bash
 
 function rim() {
-  next_token=$1; shift
-  case "$next_token" in
+  job=$1; shift
+  case "$job" in
     (m|mig|migration)
       local migration_type=$1
       local table_name=$2
@@ -16,7 +16,7 @@ function rim() {
     (p|project)
       local name=$1
       __rim_create_project "$@"
-    ;;
+      ;;
   esac
 }
 
