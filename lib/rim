@@ -13,6 +13,10 @@ function rim() {
       local tested_file=$2
       __rim_template tdd $framework $tested_file
       ;;
+    (p|project)
+      local name=$1
+      __rim_create_project "$@"
+    ;;
   esac
 }
 
