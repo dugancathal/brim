@@ -1,0 +1,9 @@
+class Create<%= @name.camelize %> < ActiveRecord::Migration
+  def change
+    create_table :<%= @name.underscore %> do |t|
+      t.string    :name, null: false
+      t.integer
+      t.timestamps
+    end
+  end
+end
