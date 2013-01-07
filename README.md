@@ -7,6 +7,7 @@ Setup
 -----
 
     $ git clone http://github.com/dugancathal/rim ~/.rim
+    $ $HOME/.rim/install.sh
     $ echo "[[ -s "$HOME/.rim/setup.sh" ]] && source ~/.rim/setup.sh" >> ~/.bashrc
 
 Usage
