@@ -1,0 +1,9 @@
+[submodule "plugins/vim-endwise"]
+	path = plugins/vim-endwise
+	url = http://github.com/tpope/vim-endwise.git
+[submodule "plugins/vim-surround"]
+	path = plugins/vim-surround
+	url = http://github.com/tpope/vim-surround.git
+[submodule "plugins/vim-rails"]
+	path = plugins/vim-rails
+	url = http://github.com/tpope/vim-rails.git
