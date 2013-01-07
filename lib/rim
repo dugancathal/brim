@@ -7,16 +7,19 @@ function rim() {
       local migration_type=$1
       local table_name=$2
       __rim_template migrations $migration_type $table_name
-      ;;
+    ;;
     (t|tdd|test)
       local framework=$1
       local tested_file=$2
       __rim_template tdd $framework $tested_file
-      ;;
+    ;;
     (p|project)
       local name=$1
       __rim_create_project "$@"
-      ;;
+    ;;
+    (vim-plugin)
+      __rim_vim_plugin "$@"
+    ;;
   esac
 }
 
