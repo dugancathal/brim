@@ -1,4 +1,4 @@
-Bbrim
+BRIM
 ====
 
 A set of ruby/bash/vim helpers, templates and things to make your life easier.
