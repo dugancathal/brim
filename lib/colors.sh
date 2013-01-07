@@ -15,3 +15,8 @@ cyan="\033[36m"
 dark_cyan="\033[1;36m"
 clear_color="\033[0m"
 
+function echocolor() {
+  local color=$1
+  local message=$2
+  echo -e "$color$message$clear_color"
+}
