@@ -1,6 +1,6 @@
 #!/bin/bash
 
-function __rim_vim_plugins() {
+function __brim_vim_plugins() {
   local command=$1; shift
   case "$command" in
     (add|install)

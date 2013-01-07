@@ -1,7 +1,0 @@
-#!/bin/bash
-
-RIM_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-source "${RIM_HOME}/lib/envconf.sh"
-
-rim "$@"
-exit 0

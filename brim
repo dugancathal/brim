@@ -1,0 +1,7 @@
+#!/bin/bash
+
+BRIM_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source "${BRIM_HOME}/lib/envconf.sh"
+
+brim "$@"
+exit 0

@@ -7,12 +7,12 @@
 # name           - an option passed into the ERB template
 #
 # Returns the output of the ERB template
-function __rim_template() {
+function __brim_template() {
   local template_type=$1
   local specified_type=$2
   local name=$3
 
-  local template_path="$__rim_template_path/$template_type/$specified_type.rb.erb"
-  $__rim_ruby -r $__rim_as_string_ext -r erb -e "@name='$name'; puts ERB.new(File.read('$template_path')).result"
+  local template_path="$__brim_template_path/$template_type/$specified_type.rb.erb"
+  $__brim_ruby -r $__brim_as_string_ext -r erb -e "@name='$name'; puts ERB.new(File.read('$template_path')).result"
 }
 

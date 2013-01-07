@@ -1,7 +1,7 @@
 #!/bin/bash
 
-RIM_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-source "${RIM_HOME}/lib/envconf.sh"
+BRIM_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source "${BRIM_HOME}/lib/envconf.sh"
 
 echocolor $green "Setting up Vim plugins" >&2
 

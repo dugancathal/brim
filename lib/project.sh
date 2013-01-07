@@ -1,6 +1,6 @@
 #!/bin/bash
 
-function __rim_create_project() {
+function __brim_create_project() {
   local project_name=$1; shift
   local options=$@
   local curr_dir=$(pwd)

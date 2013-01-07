@@ -1,24 +1,24 @@
 #!/bin/bash
 
-function rim() {
+function brim() {
   job=$1; shift
   case "$job" in
     (m|mig|migration)
       local migration_type=$1
       local table_name=$2
-      __rim_template migrations $migration_type $table_name
+      __brim_template migrations $migration_type $table_name
     ;;
     (t|tdd|test)
       local framework=$1
       local tested_file=$2
-      __rim_template tdd $framework $tested_file
+      __brim_template tdd $framework $tested_file
     ;;
     (p|project)
       local name=$1
-      __rim_create_project "$@"
+      __brim_create_project "$@"
     ;;
     (vim-plugin)
-      __rim_vim_plugin "$@"
+      __brim_vim_plugin "$@"
     ;;
   esac
 }
